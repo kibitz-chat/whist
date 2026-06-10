@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Whist · on Kibitz</title>
+    <meta name="description" content="A 4-player game of Whist with the table call right at your seats — built entirely on the Kibitz embeddable engine." />
+    <!--
+      Whist drives the call headlessly (Kibitz.mount({ headless: true })), using the
+      composable-engine widget. That now ships on the public CDN at
+      https://kibitz.chat/widget.js — but this reference design VENDORS a pinned copy
+      at /public/widget.js on purpose, so the repo runs standalone and reproducibly,
+      independent of whatever the CDN ships next (refresh it with: npm run widget).
+      To track the CDN live instead, swap this for:
+      <script src="https://kibitz.chat/widget.js"></script>.
+    -->
+    <script src="/widget.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

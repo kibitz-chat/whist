@@ -1,0 +1,33 @@
+{
+  "name": "whist",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Whist — a 4-player multiplayer card game with in-table video, built entirely on the Kibitz embeddable call + collaboration engine. A reference design for Kibitz.mount({ headless: true }).",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "e2e": "node e2e/game.mjs",
+    "widget": "cp ../kibitz/dist-widget/widget.js public/widget.js",
+    "deploy": "npm run build && npx wrangler pages deploy dist --project-name=kibitz-whist --branch=main --commit-dirty=true"
+  },
+  "dependencies": {
+    "jsqr": "^1.4.0",
+    "qrcode": "^1.5.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "typescript": "^5.7.0",
+    "vite": "^6.0.0",
+    "vitest": "^3.0.0",
+    "playwright": "^1.60.0"
+  }
+}
