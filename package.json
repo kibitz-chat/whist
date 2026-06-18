@@ -2,6 +2,7 @@
   "name": "whist",
   "private": true,
   "version": "0.1.0",
+  "license": "Apache-2.0",
   "type": "module",
   "description": "Whist — a 4-player multiplayer card game with in-table video, built entirely on the Kibitz embeddable call + collaboration engine. A reference design for Kibitz.mount({ headless: true }).",
   "scripts": {

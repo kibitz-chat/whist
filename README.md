@@ -139,4 +139,4 @@ src/ui/       Table, Seat, Card, styles     the felt
 e2e/          game.mjs + harness/           browser proof over real Kibitz
 ```
 
-Built with React + Vite + Vitest. MIT.
+Built with React + Vite + Vitest. [Apache-2.0](LICENSE).
